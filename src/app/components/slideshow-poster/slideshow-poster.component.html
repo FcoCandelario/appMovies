@@ -1,0 +1,7 @@
+<ion-slides mode="md" pager="md" scrollbar="md" [options]="slideOptions">
+  <ion-slide *ngFor="let movie of movies ">
+    <ion-card mode="md" (click)="showDetailMovie(movie.id)">
+      <ion-img [src]="movie.poster_path | imagen"  class="poster-thumbail"></ion-img>
+    </ion-card>
+  </ion-slide>
+</ion-slides>
